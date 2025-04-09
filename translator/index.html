@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>English to Tamil Translator</title>
+</head>
+<body>
+    <h2>Translate English to Tamil</h2>
+    <form method="POST">
+        <textarea name="text" rows="4" cols="50" placeholder="Enter text in English..."></textarea><br><br>
+        <input type="submit" value="Translate">
+    </form>
+
+    {% if translation %}
+        <h3>Translation:</h3>
+        <p>{{ translation }}</p>
+    {% endif %}
+</body>
+</html>
